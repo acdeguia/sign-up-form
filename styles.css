@@ -67,8 +67,11 @@ body {
   color: #1f2c32;
 }
 
-.container {
-  position: relative;
+.main-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 29px;
 }
 
 .main-form {
@@ -77,23 +80,30 @@ body {
   display: flex;
   flex-direction: column;
   padding: 48px 120px;
+  align-items: flex-start;
+gap: 31px;
 }
 
 .sign-up-text {
   font-weight: 400;
   font-size: 45px;
-  margin-bottom: 31px;
 }
 
 .logo {
   font-family: "Ivy Mode";
-  margin-bottom: 30px;
   font-weight: 600;
   font-size: 50px;
   padding: 0 120px;
-  position: absolute;
+  /* position: absolute;
   left: 530px;
-  top: -100px;
+  top: -100px; */
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+gap: 25px;
+
 }
 
 .form-row {
@@ -106,6 +116,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-right: 50px;
+  gap: 10px;
 }
 
 .form-row input {
@@ -118,6 +129,7 @@ body {
 
 .form-container {
   align-self: center;
+  height: 533px;
 }
 
 .signup-btn {
@@ -137,7 +149,7 @@ body {
   padding: 0 120px;
 }
 
-@media only screen and (max-width: 1700px) and (min-width: 10px) {
+/* @media only screen and (max-width: 1700px) and (min-width: 10px) {
   .logo {
     display: none;
   }
@@ -171,4 +183,4 @@ body {
     width: 100%;
     margin: 0 auto;
   }
-}
+} */
