@@ -4,7 +4,7 @@
 
 ⟱⟱⟱⟱⟱⟱
 
-[Live preview](https://acdeguia.github.io/sign-up-form)
+[Live preview link](https://acdeguia.github.io/sign-up-form)
 
 <hr>
 
