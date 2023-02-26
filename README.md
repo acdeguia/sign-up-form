@@ -1,6 +1,9 @@
 # Sign Up Form
+
 <br />
-⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇
+
+⟱⟱⟱
+
 <br />
 
 [Live preview](https://acdeguia.github.io/sign-up-form)
