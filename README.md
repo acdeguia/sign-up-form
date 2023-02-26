@@ -4,8 +4,6 @@
 
 ⟱⟱⟱
 
-<br />
-
 [Live preview](https://acdeguia.github.io/sign-up-form)
 
 <hr>
