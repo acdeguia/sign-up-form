@@ -35,12 +35,7 @@ input
 
 /* These elements are usually rendered a certain way by the browser */
 button,
-input[type=reset],
-input[type=button],
-input[type=submit],
-input[type=checkbox],
-input[type=radio],
-select
+input[type=submit]
 {
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
@@ -48,13 +43,9 @@ select
 }
 
 
-input[type="submit"]
-{
-	/* Fix IE7 display bug */
-	overflow:visible;
-	width:auto;
+input[type="select"] {
+  background-color: transparent;
 }
-
 
 .flex {
   display: flex;
@@ -65,7 +56,7 @@ input[type="submit"]
   flex-grow: 0;
   flex-shrink: 0;
   position: relative;
-  width: 45vw;
+  width: 40vw;
   height: 100vh;
   background-size: cover;
   display: flex;
@@ -78,7 +69,7 @@ input[type="submit"]
   flex-direction: column;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 5px;
-  width: 710px;
+  width: 700px;
   height: 369px;
   padding: 48px;
   flex-grow: 0;
@@ -106,6 +97,7 @@ input[type="submit"]
 .col-2 {
   flex-direction: column;
   justify-content: center;
+
   width: 60vw;
   height: 100vh;
   padding: 0;
@@ -128,7 +120,7 @@ input[type="submit"]
   gap: 29px;
 }
 
-.main-form {
+.form-group {
   background: #c6b3a2;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -148,6 +140,7 @@ gap: 31px;
   font-weight: 600;
   font-size: 50px;
   padding-left: 650px;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
 }
 .details {
   display: flex;
@@ -178,32 +171,53 @@ letter-spacing: 0.1em;
 color: #1F2C32;
 }
 
+
 .form-row input {
   background: #d3c0af;
-  border: 1px solid rgba(31, 44, 50, 0.3);
-  border-radius: 5px;
-  width: 344px;
+  width: 330px;
   height: 45px;
   font-weight: 400;
 font-size: 23px;
 padding: 1px 6px;
+border: 1px solid rgba(31, 44, 50, 0.3);
+border-radius: 5px;
 }
+
 .form-row input:focus {
   outline:0;
   border: 1px solid #1D728E;
 box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
 }
 
+.error-message{
+  display: none;
+  font-weight: bold;
+  color: rgba(211, 59, 82, 0.9);
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+  border: 1px solid rgba(211, 59, 82, 0.9);
+}
+
+
+input:not(:focus):not(:placeholder-shown):valid {
+  border: 1px solid rgba(31, 44, 50, 0.3);
+}
+
+input:not(:focus):not(:placeholder-shown):invalid ~ .error-message{
+  display: block; 
+}
+
 
 
 .form-container {
-  align-self: center;
+  align-self: center; 
   height: 533px;
   
 }
 
 .signup-btn {
-  width: 266px;
+ 
   height: 58px;
   background: #4f6563;
   border-radius: 10px;
@@ -214,6 +228,23 @@ box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
   color: #fcdcdc;
   margin-bottom: 27px;
   cursor: pointer;
+
+}
+
+.signup-btn:hover,
+.signup-btn:focus {
+  background-color: #081F27;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.signup-btn:hover {
+  transform: translateY(-1px);
+}
+
+.signup-btn:active {
+  background-color: #081F27;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
 }
 
 .container-btn {
@@ -224,7 +255,7 @@ box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
   .logo {
     display: none;
   }
-  .col-2, .main-form {
+  .col-2, .form-group {
     align-items: center;
     justify-content: center;
   }
@@ -234,6 +265,7 @@ box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
   }
   .form-labels {
     text-align: center;
+    position: relative;
   }
   .form-row input {
     text-align: center;

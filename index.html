@@ -28,9 +28,9 @@
 <div class="container">
   <h1 class="logo">Nouveau</h1>
           <div class="main-container">
-         <form action="#" method="post">
+         <form action="#" method="get" onsubmit="return checkPass()" >
            <div form-container>
-             <div class="main-form">
+             <div class="form-group">
                  
                <h1 class="sign-up-text">Sign Up</h1>
                
@@ -38,38 +38,39 @@
                  <div class="form-row">
                      <div class="form-labels">
                        <label for="fname">FIRST NAME</label>
-                       <input type="text" id="fname" placeholder="John"/>
-                       <span></span>
+                       <input type="text" id="fname" placeholder="John" required/>
+                       <span class="error-message"></span>
                      </div>
                      <div class="form-labels">
                        <label for="lname">LAST NAME</label>
-                       <input type="text" id="lname" placeholder="Doe"/>
-                       <span></span>
+                       <input type="text" id="lname" placeholder="Doe" required/>
+                       <span class="error-message">required</span>
                      </div>
                    </div>
      
                    <div class="form-row">
                      <div class="form-labels">
                        <label for="email">EMAIL</label>
-                       <input type="email" name="email" id="email" placeholder="johndoe@email.com" />
-                       <span></span>
+                       <input type="email" name="email" id="email" placeholder="johndoe@email.com" class="error" minlength="8" required />
+                       <span class="error-message">Enter valid email ad</span>
                      </div>
                      <div class="form-labels">
                        <label for="tel">PHONE NUMBER</label>
-                       <input type="email" name="tel" id="tel" placeholder="xxx xxxx xxxx" />
-                       <span></span>
+                       <input type="tel" name="tel" id="tel" placeholder="xxx-xxxx-xxxx" min="11" pattern="\d{3}[-]\d{4}[-]\d{4}" required />
+                       <span class="error-message">Please match the requested format</span>
                      </div>
                    </div>
      
                    <div class="form-row flex">
                      <div class="form-labels">
                          <label for="pass">PASSWORD </label>
-                         <input type="password" id="pass">
-                         <span></span>
+                         <input type="password" id="pass" class="error" placeholder=" " minlength="8" required>
+                         <span class="error-message" >Minimum of 8 characters</span>
                      </div>
                      <div class="form-labels">
                          <label for="confirm-pass">CONFIRM PASSWORD </label>
-                         <input type="password" id="confirm-pass">
+                         <input type="password" id="confirm-pass" class="error" minlength="8" placeholder=" " required>
+                         <span id="error-message"></span>
                      </div>
                    </div>
                </div>
@@ -80,14 +81,13 @@
              </div>
  
              <div class="container-btn">
-               <input type="button" value="Create Account" class="signup-btn" />
+               <input type="submit" value="Create Account" class="signup-btn" />
                <p>Already have an account? <a href="#">Log in</a></p>
              </div>
              
            </div>
          </form>
-      
-      </div>
+     
 
 </div>
                 
