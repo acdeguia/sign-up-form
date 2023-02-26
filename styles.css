@@ -33,6 +33,13 @@ input
 	box-sizing:content-box;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
 /* These elements are usually rendered a certain way by the browser */
 button,
 input[type=submit]
