@@ -1,1 +1,3 @@
-https://acdeguia.github.io/sign-up-form
+↓↓↓
+<br />
+[Live Preview](https://acdeguia.github.io/sign-up-form)
