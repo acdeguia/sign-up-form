@@ -198,7 +198,7 @@ box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
 
 .error-message{
   display: none;
-  font-weight: bold;
+
   color: rgba(211, 59, 82, 0.9);
 }
 
