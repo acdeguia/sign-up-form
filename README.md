@@ -1,4 +1,4 @@
-# TOP: Sign Up Form project
+## TOP: Sign Up Form project
 ⟱⟱⟱
 <br />
 [LIVE DEMO](https://acdeguia.github.io/sign-up-form)
