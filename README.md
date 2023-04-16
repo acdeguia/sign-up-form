@@ -1,11 +1,9 @@
 ## TOP: Sign Up Form project
-⟱⟱⟱
-<br />
-[LIVE DEMO](https://acdeguia.github.io/sign-up-form)
+➠ [LIVE DEMO](https://acdeguia.github.io/sign-up-form)
 
 ![Screenshot](https://github.com/acdeguia/sign-up-form/blob/main/images/Sign%20Up%20Form.png)
 
-## Objective
+### Objective/s
 To develop proficiency in creating and styling forms using HTML.
 
 * Successfully create forms using HTML, including various input fields and form elements.
