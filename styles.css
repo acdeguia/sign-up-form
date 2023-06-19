@@ -191,8 +191,7 @@ border-radius: 5px;
 }
 
 .form-row input:focus {
-  outline:0;
-  border: 1px solid #1D728E;
+  outline:1px solid #1D728E;
 box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
 }
 
